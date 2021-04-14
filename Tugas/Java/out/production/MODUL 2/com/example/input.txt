@@ -1,0 +1,115 @@
+  cin >> x;
+
+
+        }else if (y == 2){
+        akar();
+        }else {
+        cout << "ERRORR" << endl;
+        }
+        }else if (x == 2) {
+        menu3();
+        int a;
+        if (a == 1 )
+        {
+        sin1();
+        }else if (a == 2){
+        cos1();
+        }else {
+        cout << "ERRORR" << endl;
+        }
+        }else{
+        cout << "ERROR" << endl;
+        }
+        cin.get();
+        return 0;
+        }
+//method
+
+
+
+
+
+
+
+
+        return hasil ;
+        } while (f);
+
+        }
+        double akar(){
+        bool f = false;
+        do
+        {
+        double x,b,hasil,c;
+        char a;
+        cout << "Masukan angka: ";
+        cin >> x;
+        cout << "Masukan akar: ";
+        cin >> b;
+        c = 1/b;
+        hasil = pow(x, c);
+        cout << "Hasil akar adalah: " << hasil << endl << endl;
+        cout << "Ingin Lanjut?(y/n) ";
+        cin >> a;
+        if (a == 'y')
+        {
+        f = true;
+        }else
+        {
+        f = false;
+        }
+
+        return hasil ;
+        } while (true);
+
+        }
+
+        double sin1(){
+        bool f = false;
+        do
+        {
+        double x,hasil;
+        char a;
+        cout << "Masukan sudut: ";
+        cin >> x;
+        hasil = x*3.14/180;
+        cout << "Hasil akar adalah: " << sin(hasil) << endl << endl;
+        cout << "Ingin Lanjut?(y/n) ";
+        cin >> a;
+        if (a == 'y')
+        {
+        f = true;
+        }else
+        {
+        f = false;
+        }
+
+        return sin(hasil) ;
+        } while (f);
+
+        }
+
+        double cos1(){
+        bool f = false;
+        do
+        {
+        double x,hasil;
+        char a;
+        cout << "Masukan sudut: ";
+        cin >> x;
+        hasil = x*3.14/180;
+        cout << "Hasil akar adalah: " << cos(hasil) << endl << endl;
+        cout << "Ingin Lanjut?(y/n) ";
+        cin >> a;
+        if (a == 'y')
+        {
+        f = true;
+        }else
+        {
+        f = false;
+        }
+
+        return cos(hasil) ;
+        } while (f);
+
+        }
