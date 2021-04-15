@@ -39,9 +39,10 @@ public class tugas2 {
         }
     }
 
-    //Method
+    //Fungsi
     static void menu(){
-        System.out.println("============================");  System.out.println("    Program Kalkulator");
+        System.out.println("============================");
+        System.out.println("    Program Kalkulator");
         System.out.println(" 1. Kalkulator Eksponen");
         System.out.println(" 2. Kalkulator Trigonometri");
         System.out.println("============================");
@@ -67,10 +68,11 @@ public class tugas2 {
     }
 
     static double pangkat() {
-        boolean f = false;
+        boolean f;
+        double hasil;
         do {
             Scanner s = new Scanner(System.in);
-            double x, b, hasil;
+            double x, b;
             char a;
             System.out.print("Masukan angka: ");
             x = s.nextDouble();
@@ -80,21 +82,23 @@ public class tugas2 {
             System.out.println("Hasil pangkat adalah: " + hasil + "\n");
             System.out.println("Ingin Lanjut?(y/n) ");
             a = s.next().charAt(0);
-            if (a == 'y') {
+            if (a == 'y'|| a == 'Y') {
                 f = true;
             } else {
-                f = false;
+                break;
             }
-            return hasil;
+            ;
         }while(f);
+        return hasil;
     }
 
     static double akar() {
-        boolean f = false;
+        boolean f;
+        double hasil;
+        char a;
         do {
             Scanner s = new Scanner(System.in);
-            double x, b, hasil;
-            char a;
+            double x, b;
             System.out.print("Masukan angka: ");
             x = s.nextDouble();
             System.out.print("Masukan akar: ");
@@ -103,62 +107,62 @@ public class tugas2 {
             System.out.println("Hasil akar adalah: " + hasil + "\n");
             System.out.println("Ingin Lanjut?(y/n) ");
             a = s.next().charAt(0);
-            if (a == 'y') {
+            if (a == 'y' || a == 'Y') {
                 f = true;
             } else {
-                f = false;
+                break;
             }
-            return hasil;
         }while(f);
+        return hasil;
     }
 
     static double sin1(){
-        boolean f = false;
+        boolean f;
+        char a;
+        double hasil;
         do
         {
             Scanner s = new Scanner(System.in);
-            double x,hasil;
-            char a;
+            double x;
             System.out.print("Masukan sudut: "); ;
-             x = s.nextDouble();
+            x = s.nextDouble();
             hasil = x*3.14/180;
             System.out.println("Hasil perhitungan adalah: " + Math.sin(hasil));
             System.out.println("Ingin Lanjut?(y/n) ");
             a = s.next().charAt(0);
-            if (a == 'y')
+            if (a == 'y' || a == 'Y')
             {
                 f = true;
             }else
             {
-                f = false;
-            }
-
-            return Math.sin(hasil) ;
+                break;
+            };
         } while (f);
-
+        return Math.sin(hasil);
     }
 
     static double cos1(){
-        boolean f = false;
+        boolean f ;
+        char a;
+        double hasil;
         do
         {
             Scanner s = new Scanner(System.in);
-            double x,hasil;
-            char a;
+            double x;
             System.out.print("Masukan sudut: "); ;
             x = s.nextDouble();
             hasil = x*3.14/180;
             System.out.println("Hasil perhitungan adalah: " + Math.cos(hasil));
             System.out.println("Ingin Lanjut?(y/n) ");
             a = s.next().charAt(0);
-            if (a == 'y')
+            if (a == 'y' || a == 'Y')
             {
                 f = true;
             }else
             {
-                f = false;
+                break;
             }
-            return Math.cos(hasil) ;
         } while (f);
+        return Math.cos(hasil) ;
     }
 }

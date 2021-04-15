@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//decalre method
+//decalre fungsi
 void menu();
 void menu2();
 void menu3();
@@ -55,7 +55,8 @@ int main() {
     cin.get();
     return 0;
 }    
-//method
+
+//fungsi
 void menu() {
     cout << "============================" << endl;
     cout << "    Program Kalkulator" << endl;
@@ -97,7 +98,7 @@ double pangkat(){
      cout << "Hasil pangkat adalah: " << hasil << endl << endl;
      cout << "Ingin Lanjut?(y/n) ";
      cin >> a;
-     if (a == 'y')
+     if (a == 'y' || a == 'Y')
      {
          con = true;
      }else {
@@ -174,3 +175,4 @@ double cos1(){
     } while (con);
     return cos(hasil) ;
 }
+
